@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: grey;
+}
+
+h1 {
+    font-style: oblique;
+    font-weight: bolder;
+    color: darkred;
+}
+
+img {
+    width: 40em;
+    border-style: groove;
+    border-width: 1em;
+    border-color: darkred;
+}
+
+p {
+    font-size: 115%;
+}
+
+a {
+    font-weight: 600;
+    font-size: 150%;
+}
