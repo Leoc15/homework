@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(56, 56, 56);
+    text-align: center;
+    max-width: 800px;
+    margin:auto;
+}
+
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+p {
+    color:rgba(183, 29, 29, 0.988);
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+nav {
+    text-align: center;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+img {
+    border:ridge;
+    border-color: darkred;
+    border-width: 1em;
+    border-radius: 5%;
+    width: 600px;
+    height: 400px;
+}
+a:hover{
+    text-decoration:wavy;
+    color:rgba(255, 6, 6, 0.988)
+}
+a:visited{
+    color:rgb(18, 18, 18);
+}
+a:active{
+    color:azure;
+}
+a:focus{
+    color:blueviolet;
+}
