@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+}
+
+h1 {
+    font-style: oblique;
+    font-weight: bolder;
+    color: rgba(183, 29, 29, 0.988);
+    text-transform: uppercase;
+}
+
+img {
+    width: 40em;
+    border-style: groove;
+    border-width: 1em;
+    border-color: darkred;
+    box-shadow: -5px 5px 5px;
+    max-height: 600px;
+    max-width: 400px;
+}
+
+@media screen and (width>=300px) {
+    img {
+        width: 50%;
+    }
+}
+
+p {
+    font-size: 115%;
+    color: rgba(183, 29, 29, 0.988);
+    text-align: center;
+}
+
+a:visited {
+    font-weight: 600;
+    font-size: 150%;
+    color: rgba(183, 29, 29, 0.988)
+}
+
+a:hover {
+
+    color: rgba(255, 6, 6, 0.988)
+}
