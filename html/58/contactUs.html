@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: darkred;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        #textbox {
+            vertical-align: top;
+        }
+
+        div {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            color: rgb(27, 25, 25);
+        }
+
+        a:hover {
+            text-decoration: wavy;
+            color: rgba(255, 6, 6, 0.988)
+        }
+
+        a:visited {
+            color: rgb(115, 216, 27);
+        }
+
+        a:active {
+            color: rgb(15, 149, 149);
+        }
+
+        a:focus {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+
+
+    <form method="post" action="foo">
+        <div>
+            <label for="first">First Name:</label>
+            <input name="first" required id="first" />
+        </div>
+        <div>
+            <label for="last">Last Name:</label>
+            <input name="last" required id="last" />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input name="last" required id="Email" />
+        </div>
+        <div>
+            <label for="phone num">Phone Number:</label>
+            <input name="phone num" required id="phone num" />
+        </div>
+        <div>
+            <label id="textbox" for="comments">Comments:</label>
+            <textarea name="comments" placeholder="type message here message here" rows="10" cols="60"></textarea>
+        </div>
+        <div>
+            <button type="reset">submit</button>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>|
+        <a href="Hours.html">Hours</a>|
+        <a href="contactUs.html">Contact Us</a>|
+</body>
+
+</html>
