@@ -1,0 +1,149 @@
+body {
+    margin: 80px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: lightgrey;
+    height: 215px;
+    margin: auto;
+    margin-top: -45px;
+    text-align: center;
+    align-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: .3em;
+}
+
+ul {
+    background-color: black;
+    height: 2.5em;
+    margin-top: 0px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    align-content: center;
+    padding-left: 80px;
+}
+
+a {
+    color: White;
+    font-weight: 600;
+    padding-right: 2em;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.products {
+    text-align: center;
+    display: flex;
+    width: 30%;
+    padding-bottom: 3em;
+}
+
+@media (800px >=width) {
+
+    .products {
+        flex-wrap: wrap;
+    }
+}
+
+img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.products p {
+    text-align: justify;
+    width: 470px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+form {
+    background-color: lightgrey;
+    margin: auto;
+    height: 300px;
+    align-content: center;
+    text-align: center;
+    border-radius: .3em;
+}
+
+label {
+    padding-right: 6px;
+}
+
+input {
+    border-radius: 6px;
+    box-shadow: black 4px 3px 3px;
+}
+
+@media (800px >=width) {
+    label {
+        flex-wrap: wrap;
+        display: block;
+        padding-bottom: 6px;
+    }
+}
+
+#scroll {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 800px;
+    margin: 0px auto;
+
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lavender;
+}
+
+tbody {
+    direction: rtl;
+    text-align: justify;
+}
+
+#total {
+    direction: rtl;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+td,
+th {
+    border: 2px solid black;
+}
+
+.total {
+    color: red;
+}
+
+tbody tr:hover {
+    background-color: blue;
+}
+
+#bottomFooter {
+    background-color: black;
+    color: white;
+    height: 2.5em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-content: center;
+    padding-left: 80px;
+}
