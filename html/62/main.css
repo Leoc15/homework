@@ -1,36 +1,58 @@
-body{
+body {
     background-color: rgb(21, 45, 118);
     color: aquamarine;
 }
-ul{
-    position: fixed;
-}
-.Main{
-margin: 80px;
-}
-header{
-    position: relative;
-}
-img{
-    height:300px;
-    position: absolute;
-    right:20px;
-    top :-80px;
+
+nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
-.About{
-text-align: center;
-margin-left: 80px;
-margin-right: 80px;
-margin-top: 20px;
+.Main {
+    margin: 80px;
 }
-.mb-3{
-    margin: 22%;   
-    margin: 10em !important;
+
+header {
+    position: relative;
 }
-input{
+
+img {
+    height: 300px;
+    position: absolute;
+    right: 20px;
+    top: -80px;
+}
+
+.About {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 4em;
+}
+
+.mb-3 {
+    margin: 22%;
+    margin-bottom: 10em !important;
+}
+
+input {
     margin-bottom: 28px;
 }
-.Mycolor{
+
+.Mycolor {
     color: aquamarine !important;
+}
+
+.contact {
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+#button{
+    text-align: center;
+    margin-top: 1.5em;
 }
