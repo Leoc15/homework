@@ -1,0 +1,37 @@
+body{
+    margin-right:80px;
+    margin-left: 80px;
+}
+nav{
+    margin:0px;
+}
+.container-fluid.py-5{
+    text-align: center;
+    background-color: lightgray;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+.container-fluid.py-5 h1{
+text-transform: uppercase;
+}
+.card{
+    width: 33.3%;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+}
+#foo{
+    
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.products #words{
+    position: absolute;
+}
+.products .card{
+    top: 6em;
+}
+#pos{
+margin-top:6em;
+}
