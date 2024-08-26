@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="Messagebox.js"></script>
+    <script>
+        function mycb(uc) {
+            console.log('You picked ' + uc);
+        }
+        msgbox('Is this enough homework?', false, ['Yes', 'No', 'Maybe'],
+            mycb);
+            msgbox('Is this enough homework?', true, null,
+            mycb);
+    </script>
+
+</body>
+
+</html>
