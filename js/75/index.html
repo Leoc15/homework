@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .form-group {
+        margin-bottom: .5em;
+      }
+
+      .form-group label {
+        display: inline-block;
+        width: 3em;
+      }
+        #loadFileForm {
+        display: none;
+      }
+
+      #loadFileForm {
+        background-color: lightcyan;
+        border: 1px solid black;
+        padding: 1em;
+
+        width: 15em;
+        height: 9em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -4.5em;
+        margin-left: -7.5em;
+      }
+    </style>
+</head>
+
+<body>
+    <button id="loadFile">select file</button>
+    <form id="loadFileForm">
+    <div class="form-group">
+        <label for="file">File Name:</label>
+        <input id="myInput">
+      </div>
+      <button id="File">load file</button>
+    </form>
+    <div id="myJson"></div>
+    <img id="loading" src="/sharedImages/loading.gif" alt="load">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="ajax.js"></script>
+</body>
+
+</html>
