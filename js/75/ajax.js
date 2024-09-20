@@ -14,7 +14,7 @@ $('#loadFile').click(() => {
 $('#File').click((e) => {
     $('#loading').show();
     e.preventDefault();
-    
+
     fetch($('#myInput').val())
         .then(r => {
             if (r.status < 400) {
@@ -27,16 +27,16 @@ $('#File').click((e) => {
         })
         .then(things => {
             console.log(things);
-           /* things.forEach(thing => {
-                console.log(thing.name, thing.price, thing);
-            });*/
+            /* things.forEach(thing => {
+                 console.log(thing.name, thing.price, thing);
+             });*/
             $('#myJson').text(things)
         })
         .catch(e => {
             console.log('doing 10 lines of sophisticated error handling here');
             console.error('oops', e);
             console.log(status);
-        }).finally(()=>{
+        }).finally(() => {
             $('#loading').hide();
         })
         ;
@@ -49,4 +49,4 @@ $('#File').click((e) => {
 function hideForm() {
     LoadFile.trigger('reset');
     LoadFile.slideUp('slow');
-  }
+}
