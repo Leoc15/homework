@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body.bg1 {
+        background-image: url('/sharedImages/andysBedroom.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    body.bg2 {
+        background-image: url('/sharedImages/bg2.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body.bg3 {
+        background-image: url('/sharedImages/bg3.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .box {
+        position: absolute;
+    }
+
+    #image-area {
+        width: 800px;
+        height: 600px;
+        position: relative;
+    }
+</style>
+
+<body>
+    <audio src="/sharedMusic/toyStory.mp3" xautoplay controls draggable="true"></audio>
+
+    <label>
+        <input type="radio" name="background" value="bg1"> andys bedroom basic
+    </label>
+    <label>
+        <input type="radio" name="background" value="bg2"> andys bed
+    </label>
+    <label>
+        <input type="radio" name="background" value="bg3"> andys bedroom delux
+    </label>
+    <div id="image-area"></div>
+    <script src="mrPotatoHead.js"></script>
+</body>
+
+</html>
