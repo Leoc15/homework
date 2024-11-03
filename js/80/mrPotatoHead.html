@@ -7,21 +7,44 @@
     <title>Document</title>
 </head>
 <style>
-    body.bg1 {
-        background-image: url('/sharedImages/andysBedroom.jpeg');
+    html,
+    body,
+    #sidebar,
+    #main {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #sidebar {
+        width: 25%;
+        float: left;
+        background-color: lightblue;
+        overflow: auto;
+    }
+
+    /* #main {
+        width: 75%;
+        float: left;
+        background: url('media/Background.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left;
+    } */
+
+    body.bg1 {
+        background-image: url('media/Background.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     body.bg2 {
-        background-image: url('/sharedImages/bg2.jpeg');
+        background-image: url('media/andysBed1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     body.bg3 {
-        background-image: url('/sharedImages/bg3.jpeg');
+        background-image: url('media/AndysBedroomdelux.jpeg');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -35,21 +58,58 @@
         height: 600px;
         position: relative;
     }
+
+    #reset {
+        position: fixed top 15px,
+            left 15px;
+    }
 </style>
 
 <body>
-    <audio src="/sharedMusic/toyStory.mp3" autoplay loop></audio>
+    <div id="sidebar">
+        <img src="media/1.png" class="part" />
+        <img src="media/2.png" class="part" />
+        <img src="media/3.png" class="part" />
+        <img src="media/4.png" class="part" />
+        <img src="media/5.png" class="part" />
+        <img src="media/6.png" class="part" />
+        <img src="media/7.png" class="part" />
+        <img src="media/8.png" class="part" />
+        <img src="media/9.png" class="part" />
+        <img src="media/10.png" class="part" />
+        <img src="media/11.png" class="part" />
+        <img src="media/12.png" class="part" />
+        <img src="media/13.png" class="part" />
+        <img src="media/14.png" class="part" />
+        <img src="media/15.png" class="part" />
+        <img src="media/16.png" class="part" />
+        <img src="media/17.png" class="part" />
+        <img src="media/18.png" class="part" />
+        <img src="media/19.png" class="part" />
+        <img src="media/20.png" class="part" />
+        <img src="media/21.png" class="part" />
+        <img src="media/22.png" class="part" />
+        <img src="media/23.png" class="part potato" />
+    </div>
 
-    <label>
-        <input type="radio" name="background" value="bg1"> andys bedroom basic
-    </label>
-    <label>
-        <input type="radio" name="background" value="bg2"> andys bed
-    </label>
-    <label>
-        <input type="radio" name="background" value="bg3"> andys bedroom delux
-    </label>
-    <div id="image-area"></div>
+    <div id="main">
+        <audio src="media/toyStory.mp3" autoplay loop></audio>
+
+
+        <label>
+            <input type="radio" name="background" value="bg1"> andys bedroom basic
+        </label>
+        <label>
+            <input type="radio" name="background" value="bg2"> andys bed
+        </label>
+        <label>
+            <input type="radio" name="background" value="bg3"> andys bedroom delux
+        </label>
+        <button id="reset">Reset</button>
+        <div id="image-area"></div>
+    </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.0/jquery-ui.min.js"></script>
     <script src="mrPotatoHead.js"></script>
 </body>
 
