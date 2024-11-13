@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        #color {
+            position: absolute;
+            left: 3px;
+            top: 3%
+        }
+
+        #rad {
+            position: absolute;
+            left: 58px;
+            top: 3%
+        }
+
+        #start {
+            position: absolute;
+            left: 235px;
+            top: 3%
+        }
+
+        #theCanvas {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="theCanvas"></canvas>
+    <input type="color" id="color">
+    <button id="start">add ants</button>
+    <input type="number" placeholder="ants to add" id="rad" required>
+    <script src="ants.js"></script>
+</body>
+
+</html>
