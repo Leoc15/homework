@@ -62,7 +62,7 @@
             }
 
 
-            if (x < 0 || x >= (theCanvas.width - 70) || y < 0 || y >= (theCanvas.height - 70)) {
+            if (x < 0 || x > theCanvas.width - SNAKE_SIZE || y < 0 || y > theCanvas.height - SNAKE_SIZE) {
                 clearInterval(myInterval);
                 console.log('ggs');
             } else {
