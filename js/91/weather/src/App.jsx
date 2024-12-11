@@ -11,7 +11,7 @@ class App extends Component {
 
   async fetchWeather(zip) {
     try {
-      const apiKey = 'f253536cd59b16d8814fcb012a010d22';
+      const apiKey = 'your api';
 
       const r = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&appid=${apiKey}&units=imperial&lang=he`);
 
