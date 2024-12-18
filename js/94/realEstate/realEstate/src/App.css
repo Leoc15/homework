@@ -1,0 +1,21 @@
+header {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
+  color: red;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:;
+  font-weight: 700;
+  text-align: center;
+}
