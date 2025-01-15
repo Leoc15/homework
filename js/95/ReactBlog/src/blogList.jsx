@@ -1,6 +1,7 @@
 import Posts from './Posts'
 import { useState, useEffect } from 'react';
 
+
 export default function BlogList() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState();
@@ -28,18 +29,19 @@ export default function BlogList() {
         })();
     }, []);
 
-    const ShowBlogs=(id)=>{
+    const ShowBlogs = (id) => {
         setPosts(id);
         console.log('works');
-        
+
     }
 
     return (
         <>
+
             {loading && <h2>loading...</h2>}
             {error && <h2>oops - failed to load blogs.</h2>}
-            {blogs && blogs.map(b => <h2 key={b.id} onClick={()=>{ShowBlogs(b.id)}}>{b.name}</h2>)}
-            {postId && <Posts blogId={postId}/>}
+            {blogs && blogs.map(b => <h2 key={b.id} onClick={() => { ShowBlogs(b.id) }}>{b.name}</h2>)}
+            {postId && <Posts blogId={postId} />}
         </>
     )
 }

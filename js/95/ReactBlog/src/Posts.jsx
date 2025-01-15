@@ -5,8 +5,7 @@ export default function Posts(props) {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState();
     const [posts, setPosts] = useState();
-    const [showComments, setShowComments] = useState(false);
-    const [cpi, setCPI] = useState();
+    const [cpi, setCPI] = useState([]);
 
 
     useEffect(() => {
@@ -28,14 +27,32 @@ export default function Posts(props) {
 
             setLoading(false);
         })();
-    }, []);
+    }, [props.blogId]);
 
     return (
         <>
             {loading && <h2>loading...</h2>}
             {error && <h2>oops - failed to load blogs.</h2>}
-            {!showComments && posts && posts.map(p => <div key={p.id} onClick={() => setShowComments(!showComments)}>{p.title} {p.body}</div>)}
-            {showComments && posts && posts.map(p => <div key={p.id}> <h2 key={p.id}>{p.title} {p.body}</h2> <Comments postId={p.id} /></div>)}
+            {posts && posts.map(p => {
+                let bttnStrng = "Show Comment";
+                let comment = '';
+                if (cpi.includes(p)) {
+                    bttnStrng = 'Hide Comment'
+                }
+                const post=<div>{p.title}{p.body} <button onClick={()=>{
+                    let temp= [...cpi];
+                    if(bttnStrng==='Show Comment'){
+                        temp.push(p);
+                    }else{
+                        temp=temp.filter(elem=>elem !=p);
+                    }
+                    setCPI(temp);
+                }}>{bttnStrng}</button></div>;
+                if(cpi.includes(p)){
+                    comment=<Comments postId={p.id}/>
+                }
+                return <div key={p.id}>{post} {comment}</div>
+                })}
         </>
     )
 }

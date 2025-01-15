@@ -27,7 +27,7 @@ export default function Comments(props) {
 
             setLoading(false);
         })();
-    }, [props]);
+    }, [props.postId]);
 
     return (
         <>

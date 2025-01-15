@@ -1,6 +1,6 @@
 import './blogList.css'
 import BlogList from './blogList'
-function App() {
+export default function App() {
 
   return (
     <div className="header">
@@ -18,5 +18,3 @@ function App() {
     </div>
   )
 }
-
-export default App
