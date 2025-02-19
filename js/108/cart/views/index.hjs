@@ -1,0 +1,20 @@
+<h1>{{ title }}</h1>
+<form method="post">
+    {{#items}}
+    <div>
+        {{name}}
+        {{price}}
+        <img src="{{picture}}" alt="{{name}}" />
+        {{desc}}
+
+        <div>
+            <label for="input">Qty</label>
+            <input type="int" name="Qty" value="{{Qty}}">
+            <button id="qty">update</button>
+            <input type="hidden" name="id" value="{{id}}">
+        </div>
+    </div>
+
+    {{/items}}
+
+</form>
