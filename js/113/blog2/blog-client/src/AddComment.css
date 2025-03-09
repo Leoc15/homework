@@ -1,0 +1,9 @@
+#addCommentForm input, #addCommentForm textarea {
+    width: 100%;
+    margin-bottom: .5em;
+    text-align: center;
+  }
+  
+  #addCommentForm textarea {
+    height: 15em;
+  }
