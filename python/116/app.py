@@ -12,4 +12,9 @@ class Die:
 d6 = Die()
 
 for i in range(10):
-    print("Rolling a d6:", 'you rolled a', d6.roll())
+    print("Rolling a 6 sided:", 'you rolled a', d6.roll())
+
+d12 =Die(12)
+
+for i in range(10):
+    print("Rolling a 12 sided die:", 'you rolled a', d12.roll())
